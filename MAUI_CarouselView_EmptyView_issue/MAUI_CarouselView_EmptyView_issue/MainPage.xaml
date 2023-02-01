@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_CarouselView_EmptyView_issue.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <CarouselView x:Name="Carousel" Loop="False">
+                <CarouselView.EmptyView>
+                    <ContentView BackgroundColor="DarkRed">
+                        <BoxView HeightRequest="50" WidthRequest="50" Color="Black"/>
+                    </ContentView>
+                </CarouselView.EmptyView>
+            </CarouselView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+
